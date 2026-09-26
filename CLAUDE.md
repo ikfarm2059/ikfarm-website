@@ -29,7 +29,7 @@ Launches the test runner in interactive watch mode
 ### Deploy
 本番 https://ik-farm.jp は **Cloudflare Pages** が配信しており、`master` へ push すると自動でビルド・公開される。デプロイのために実行するコマンドは無い。
 
-**`npm run deploy` は実行しないこと。** `gh-pages` ブランチは ik-farm.jp へ転送するリダイレクトページ専用になっている(2026-09-26 に保管庫を ikfarm-website へ改名したので、転送元は ikfarm2059.github.io/ikfarm-website。旧 /my-website の転送は終了)。`npm run deploy` はこれをサイト本体のビルドで上書きし、リダイレクトを壊す。
+**`npm run deploy` は 2026-09-26 に package.json から削除済み。gh-pages コマンドを直接叩くこともしないこと。** `gh-pages` ブランチは ik-farm.jp へ転送するリダイレクトページ専用になっている(2026-09-26 に保管庫を ikfarm-website へ改名したので、転送元は ikfarm2059.github.io/ikfarm-website。旧 /my-website の転送は終了)。`npm run deploy` はこれをサイト本体のビルドで上書きし、リダイレクトを壊す。
 
 ## Architecture
 
