@@ -29,7 +29,7 @@ Launches the test runner in interactive watch mode
 ### Deploy
 本番 https://ik-farm.jp は **Cloudflare Pages** が配信しており、`master` へ push すると自動でビルド・公開される。デプロイのために実行するコマンドは無い。
 
-**`npm run deploy` は実行しないこと。** `gh-pages` ブランチは 2026-07-19 以降、旧URL(ikfarm2059.github.io/my-website)から ik-farm.jp へ転送するリダイレクトページ専用になっている。`npm run deploy` はこれをサイト本体のビルドで上書きし、リダイレクトを壊す。
+**`npm run deploy` は実行しないこと。** `gh-pages` ブランチは ik-farm.jp へ転送するリダイレクトページ専用になっている(2026-09-26 に保管庫を ikfarm-website へ改名したので、転送元は ikfarm2059.github.io/ikfarm-website。旧 /my-website の転送は終了)。`npm run deploy` はこれをサイト本体のビルドで上書きし、リダイレクトを壊す。
 
 ## Architecture
 
@@ -56,7 +56,7 @@ The application follows a component-based architecture:
 The website content is primarily in Japanese, serving a Japanese agricultural company. All text content, navigation, and user-facing elements are in Japanese.
 
 ### Deployment
-- 本番URL: `https://ik-farm.jp`(Cloudflare Pages、プロジェクト名 my-website)。`master` への push で自動ビルド・公開
+- 本番URL: `https://ik-farm.jp`(Cloudflare Pages、プロジェクト名 ikfarm-website。2026-09-26に my-website から改名)。`master` への push で自動ビルド・公開
 - `package.json` の `homepage` は `"."`(相対パス)
 - `gh-pages` ブランチは旧URLからのリダイレクト専用。上の「Deploy」の注意を参照
 
