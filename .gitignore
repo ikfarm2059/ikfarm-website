@@ -25,6 +25,8 @@ dev-server.out.log
 dev-server.err.log
 
 # ローカル作業用ファイル(サイトでは未使用)
+fal-kyokasho/
+_reel_tmp/
 src/assets/DJI_0001.MP4
 google-drive-export-*/
 ik-farm-website-google-drive-*.zip
