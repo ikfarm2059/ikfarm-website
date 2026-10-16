@@ -91,6 +91,12 @@ main {
   color: var(--color-cream);
 }
 
+.footer-sns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+
 .App-footer p {
   max-width: 760px;
   line-height: 1.8;

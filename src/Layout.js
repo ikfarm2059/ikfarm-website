@@ -3,6 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import './App.css';
 import InstagramLink from './components/InstagramLink';
+import YouTubeLink from './components/YouTubeLink';
 import { siteContent } from './data/siteContent';
 import logo from './assets/logo-new.png';
 
@@ -105,9 +106,12 @@ function Layout() {
         <Outlet />
       </main>
       <footer className="App-footer">
-        <InstagramLink />
+        <div className="footer-sns">
+          <InstagramLink />
+          <YouTubeLink />
+        </div>
         <p>{siteContent.footer.message}</p>
-        <p><a href="./privacy.html">プライバシーポリシー</a></p>
+        <p><a href="./privacy.html">プライバシーポリシー</a>　・　<a href="./terms.html">利用規約</a></p>
         <p>{siteContent.company.copyright}</p>
       </footer>
     </div>
