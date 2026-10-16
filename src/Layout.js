@@ -107,6 +107,7 @@ function Layout() {
       <footer className="App-footer">
         <InstagramLink />
         <p>{siteContent.footer.message}</p>
+        <p><a href="./privacy.html">プライバシーポリシー</a></p>
         <p>{siteContent.company.copyright}</p>
       </footer>
     </div>
